@@ -4,7 +4,7 @@ const velocidad = 35;
 
 const backgroundAudio = document.getElementById('backgroundAudio');
 
-backgroundAudio.volume = 0.3;
+backgroundAudio.volume = 0.5;
 
 window.onload = function() {
   backgroundAudio.muted = false;  
