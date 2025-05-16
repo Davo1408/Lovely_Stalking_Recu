@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atención</title>
+  <link rel="stylesheet" href="assets/estilos/advertencia.css">
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <!-- Video de advertencia -->
+  <div class="video-container">
+    <video autoplay muted loop id="warningVideo">
+      <source src="assets/videos/add.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Contenedor de texto -->
+  <div id="textoAviso" class="texto-container"></div>
+
+      <!-- Audio de fondo -->
+  <audio autoplay loop muted id="backgroundAudio">
+    <source src="assets/sonidos/teclado.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Botón de continuar -->
+  <a href="assets/html/recuadros.html" id="continuarBtn" class="continuar-btn">Continuar</a>
+
+  <script src="assets/scripts/advertencia.js"></script>
+</body>
+</html>

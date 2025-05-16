@@ -1,0 +1,77 @@
+body{
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+}
+
+img{
+  background-color: white;
+}
+
+#creditos {
+  background-color: black;
+  padding: 20px;
+}
+
+#creditos h2 {
+  color: rgb(108, 52, 131);
+  font-size: 40px;
+  font-family: 'Courier New', monospace;
+}
+
+#creditos ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#creditos li {
+  margin-bottom: 10px;
+}
+
+.glitch {
+  color: white ;
+  font-size: 25px;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  animation: glitch-effect 1.5s infinite;
+}
+
+@keyframes glitch-effect {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(5px, -5px);
+  }
+  60% {
+    transform: translate(-5px, 0);
+  }
+  80% {
+    transform: translate(5px, 0);
+  }
+  100% {
+    transform: translate(5);
+  }
+}
+
+.glitch-button {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  animation: glitch-effect 3s infinite;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}

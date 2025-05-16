@@ -1,0 +1,118 @@
+body {
+  font-family: sans-serif;
+  background-color: #111;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.video-thumb {
+  width: 30%;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.video-thumb video {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #636363;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  background: #333;
+  padding: 5px 12px;
+  border-radius: 50%;
+}
+
+/* Fondo de video */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Íconos en las esquinas */
+.corner-icon {
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  color: antiquewhite;
+}
+
+.corner-icon img {
+  width: 100%;
+  height: auto;
+}
+
+/* Posiciones */
+.left-icon {
+  left: 20px;
+}
+
+.right-icon {
+  right: 20px;
+}
+
+/* Estilo para la webcam */
+.webcam-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#webcam {
+  width: 25%;  /* Puedes ajustar el tamaño según lo necesites */
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: black;
+}
